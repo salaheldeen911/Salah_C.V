@@ -1,260 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salah CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri&family=Hurricane&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> -->
+    <link
+      href="assets/css/fontawesome-free-6.4.0-web/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Salah CV</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Hurricane&display=swap" rel="stylesheet">
-        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> -->
-        <link href="assets/css/fontawesome-free-6.4.0-web/css/all.min.css" rel="stylesheet">
-        <link href="assets/css/main.css" rel="stylesheet">
-    </head>
-
-    <body>
-        <header>
-            <h1>Salah Eldeen Mohamed</h1>
-            <h3>PHP / Laravel Web Developer</h3>
-        </header>
-        <main>
-            <div id="mainContainer">
-                <div id="sidebar">
-                    <div id="right_arrow_holder" class="none" onclick="activeSide(this)">
-                        <i class="fa fa-arrow-alt-circle-right" style="font-size: 28px;color: #319aba;"></i>
-                    </div>
-                    <div id="left_arrow_holder" class="hidden none" onclick="deactiveSide(this)">
-                        <i class="fa fa-arrow-alt-circle-left" style="font-size: 28px;color: #319aba;"></i>
-                    </div>
-                    <section id="contact">
-                        <h3>Contact</h3>
-                        <p><strong><i class="fa fa-envelope"></i> </strong>salah.eldeen.mail.gmail.com</p>
-                        <p><strong><i class="fa fa-phone-volume"></i> </strong>+201273542801</p>
-                        <p><strong><i class="fab fa-github-square"></i> </strong>https://github.com/salaheldeen911</p>
-                        <p><strong><i class="fab fa-linkedin"></i>
-                            </strong>https://www.linkedin.com/in/salah-mohamed-3a43581b5</p>
-                    </section>
-                    <hr style="margin: 20px 0;">
-                    <section id="skills">
-                        <h3>Skills</h3>
-                        <div id="skillsContainer">
-                            <p>Laravel</p>
-                            <p>PHP</p>
-                            <p>Livewire</p>
-                            <p>MySQL</p>
-                            <p>JavaScript</p>
-                            <p>VueJS</p>
-                            <p>JQuery</p>
-                            <p>CSS</p>
-                            <p>HTML</p>
-                        </div>
-                    </section>
-                    <hr style="margin: 20px 0;">
-                    <section id="knowledge">
-                        <h3>knowledge</h3>
-                        <div id="knowledgeContainer">
-                            <p>SOLID</p>
-                            <p>Design Patterns</p>
-                            <p>Problem Solving</p>
-                            <p>Database Schema</p>
-                            <p>Rest API</p>
-                            <p>WebSocket</p>
-                            <p>Git</p>
-                        </div>
-                    </section>
-                    <div style="position: absolute;bottom: 5%;left: 58px;">
-                        <strong><a style="color: black;" href="Salah_C.V.pdf" download="CV"> Download PDF Version
-                            </a></strong>
-                    </div>
-                </div>
-                <div id="mainContent" onclick="deactiveSide(this)">
-                    <section id="summary">
-                        <h2>Summary & Objectives</h2>
-                        <p style="font-size:16px; margin-bottom:10px">I have extensive experience in web development,
-                            utilizing various technologies such as Laravel, Livewire, MySQL, JavaScript, VueJS, and
-                            JQuery. I prioritize conducting thorough code reviews before committing changes, ensuring
-                            that the code is clean, readable, and easily expandable. Moreover, I consistently apply
-                            object-oriented programming principles, specifically the SOLID principles, and select
-                            appropriate design patterns to solve problems efficiently. <br> I possess a strong interest
-                            in staying up-to-date with the latest developments in the industry, consistently seeking out
-                            new knowledge and advancements. </p>
-                    </section>
-                    <hr>
-                    <section id="projects">
-                        <h2>Projects</h2>
-                        <div id="projects_container">
-                            <div class="project">
-                                <p class="project_title">Tech-Store</p>
-                                <div class="project_contents">
-                                    <div class="project_contents_header">
-                                        <h4 style="padding-left:5px;">Description</h4>
-                                        <span class="online">Online</span>
-                                    </div>
-                                    <p style="padding-left:10px;">The website has four types of users: super admin,
-                                        admin, user, and guests. Each user type has different permissions. The website
-                                        is divided into three categories: mobiles & tablets, TVs, and laptops & PCs.
-                                    </p>
-                                    <p><strong>Note:</strong> Users can become an admin for a limited period of 3 days
-                                        by clicking on the "be an admin" button.</p>
-                                    <h4>Main used technologies</h4>
-                                    <ul>
-                                        <li style="margin-left: 21px">Laravel / MySQL / Blade / Livewire / JQuery / More
-                                        </li>
-                                    </ul>
-                                    <h4>Visit the website</h4>
-                                    <ul>
-                                        <li style="margin-left: 21px">
-                                            <a style="word-break: break-all;"
-                                               href="http://salah-tech-store.great-site.net/"
-                                               target="_blank">http://salah-tech-store.great-site.net/</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="project">
-                                <p class="project_title">Real-time Chat, To-Do List, And Whack-a-Mole Game</p>
-                                <div class="project_contents">
-                                    <div class="project_contents_header">
-                                        <h4 style="padding-left:5px;">Description</h4>
-                                    </div>
-                                    <p style="padding-left:10px;"><strong>Authentication:</strong> Prior to accessing
-                                        the website, it is necessary to either log in or register.</p>
-                                    <p style="padding-left:10px;">
-                                        <strong>Real-time Chat:</strong> The chat module consists of three columns:
-                                        suggested users, friends, and a public chat room. Users have the ability to send
-                                        friend requests, remove pending requests, and unfriend existing friends.
-                                        Accepted requests enable private conversations.
-                                    </p>
-                                    <p style="padding-left:10px;"><strong>To-DO:</strong> Within the To-Do module, you
-                                        can add tasks, edit them directly, mark them as complete, delete individual
-                                        tasks, or delete all tasks at once.</p>
-                                    <p style="padding-left:10px;"><strong>Whack-a-Mole Game:</strong> This widely
-                                        recognized game has been developed with six holes and a high-speed timer to keep
-                                        track of the top score.</p>
-                                    <h4>Main used technologies</h4>
-                                    <ul>
-                                        <li style="margin-left: 21px">Laravel / Web-Socket / VueJS / Laravel Echo / More
-                                        </li>
-                                    </ul>
-                                    <h4>Visit it on github</h4>
-                                    <ul>
-                                        <li style="margin-left: 21px">
-                                            <a style="word-break: break-all;"
-                                               href="https://github.com/salaheldeen911/vue-vite-chat-app"
-                                               target="_blank">https://github.com/salaheldeen911/vue-vite-chat-app</a>
-                                        </li>
-                                        <li style="margin-left: 21px">
-                                            <a style="word-break: break-all;"
-                                               href="https://github.com/salaheldeen911/chat-api"
-                                               target="_blank">https://github.com/salaheldeen911/chat-api</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="project">
-                                <p class="project_title">PHP MVC framework</p>
-                                <div class="project_contents">
-                                    <div class="project_contents_header">
-                                        <h4 style="padding-left:5px;">Description</h4>
-                                    </div>
-                                    <p style="padding-left:10px;">In this framework, you can define your own routes
-                                        similar to Laravel. You can also create your own controllers, models, and views.
-                                    </p>
-                                    <p style="padding-left:10px;">If you're interested, I highly recommend visiting the
-                                        repository for the documentation.</p>
-                                    <h4>Main used technologies</h4>
-                                    <ul>
-                                        <li style="margin-left: 21px">PHP / OOP </li>
-                                    </ul>
-                                    <h4>Visit it on github</h4>
-                                    <ul>
-                                        <li style="margin-left: 21px">
-                                            <a style="word-break: break-all;"
-                                               href="https://github.com/salaheldeen911/simple_php_oop_mvc_framework"
-                                               target="_blank">https://github.com/salaheldeen911/simple_php_oop_mvc_framework</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="project">
-                                <p class="project_title">Spry Validator Plugin</p>
-                                <div class="project_contents">
-                                    <div class="project_contents_header">
-                                        <h4 style="padding-left:5px;">Description</h4>
-                                    </div>
-                                    <p style="padding-left:10px;">This plugin is an added layer on Adobe Spry Validation
-                                        open source. It includes custom error messages and additional functionality to
-                                        facilitate AJAX requests, making it more user-friendly and versatile. <br> For
-                                        more detailed information, refer to the documentation provided for this JQuery
-                                        plugin. </p>
-                                    <h4>Main used technologies</h4>
-                                    <ul>
-                                        <li style="margin-left: 21px">JavaScript / JQuery</li>
-                                    </ul>
-                                    <h4>Visit it on github</h4>
-                                    <ul>
-                                        <li style="margin-left: 21px">
-                                            <a style="word-break: break-all;"
-                                               href="https://github.com/salaheldeen911/Spry-Validator-Plugin"
-                                               target="_blank">https://github.com/salaheldeen911/Spry-Validator-Plugin</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                                <p class="project_title">More</p>
-                                <div class="project_contents">
-                                    <div class="project_contents_header">
-                                        <h4 style="padding-left:5px;">Description</h4>
-                                    </div>
-                                    <p style="padding-left:10px;">There are more than 10 repositories available on my
-                                        Github account, like <strong><a
-                                               href="https://salaheldeen911.github.io/css-jquery-template/"
-                                               target="_blank">Responsive Template</a></strong>, <strong><a
-                                               href="https://salaheldeen911.github.io/preloader-idea/"
-                                               target="_blank">Preloader</a></strong>, <strong><a
-                                               href="https://github.com/salaheldeen911/vue-todo-list"
-                                               target="_blank">VueJS to-do list</a></strong> with a <strong><a
-                                               href="https://github.com/salaheldeen911/laravel-api-for-vue-todo-list"
-                                               target="_blank"> Laravel Sanctum Api</a></strong>, <strong><a
-                                               href="https://github.com/salaheldeen911/php-choices-exams"
-                                               target="_blank">PHP multiple choices exams system</a></strong>, and more.
-                                        <br> You can find them all on my Github account <a
-                                           href="https://github.com/salaheldeen911"
-                                           target="_blank">https://github.com/salaheldeen911</a>. </p>
-                                </div>
-                            </div> -->
-                        </div>
-                    </section>
-                    <br>
-                    <hr>
-                    <section id="work">
-                        <h2>Current Work</h2>
-                        <p style="font-size:16px">I am currently employed as a back-end developer at <strong>RayaGate IT
-                                Company</strong>. Here are the projects I have contributed to:</p>
-                        <ul>
-                            <li style="margin-left: 21px"><strong>CMS System:</strong> I developed a content management
-                                system for a university in Germany.</li>
-                            <li style="margin-left: 21px"><strong>K-Link Project:</strong> I am currently working on a
-                                multi-tenant system that is being built to support transportation companies in the
-                                German market. This system will be able to handle multiple databases.</li>
-                        </ul>
-                    </section>
-                    <br>
-                    <hr>
-                    <section id="education">
-                        <h2>Education</h2>
-                        <p style="font-size:16px">Bachelor's degree from Faculty of Commerce, Alexandria University,
-                            Egypt.</p>
-                    </section>
-                </div>
+  <body>
+    <header>
+      <h1>Salah Eldeen Mohamed</h1>
+      <h3>PHP / Laravel Web Developer</h3>
+    </header>
+    <main>
+      <div id="mainContainer">
+        <div id="sidebar">
+          <div id="right_arrow_holder" class="none" onclick="activeSide(this)">
+            <i
+              class="fa fa-arrow-alt-circle-right"
+              style="font-size: 28px; color: #319aba"
+            ></i>
+          </div>
+          <div
+            id="left_arrow_holder"
+            class="hidden none"
+            onclick="deactiveSide(this)"
+          >
+            <i
+              class="fa fa-arrow-alt-circle-left"
+              style="font-size: 28px; color: #319aba"
+            ></i>
+          </div>
+          <section id="contact">
+            <h3>Contact</h3>
+            <p>
+              <strong><i class="fa fa-envelope"></i> </strong
+              >salah.eldeen.mail.gmail.com
+            </p>
+            <p>
+              <strong><i class="fa fa-phone-volume"></i> </strong>+201273542801
+            </p>
+            <p>
+              <strong><i class="fab fa-github-square"></i> </strong
+              >https://github.com/salaheldeen911
+            </p>
+            <p>
+              <strong><i class="fab fa-linkedin"></i> </strong
+              >https://www.linkedin.com/in/salah-mohamed-3a43581b5
+            </p>
+          </section>
+          <hr style="margin: 20px 0" />
+          <section id="skills">
+            <h3>Skills</h3>
+            <div id="skillsContainer">
+              <p>Laravel</p>
+              <p>PHP</p>
+              <p>Livewire</p>
+              <p>MySQL</p>
+              <p>JavaScript</p>
+              <p>VueJS</p>
+              <p>JQuery</p>
+              <p>CSS</p>
+              <p>HTML</p>
             </div>
-        </main>
-        <script src="assets/js/main.js"></script>
-    </body>
-
+          </section>
+          <hr style="margin: 20px 0" />
+          <section id="knowledge">
+            <h3>knowledge</h3>
+            <div id="knowledgeContainer">
+              <p>SOLID</p>
+              <p>Design Patterns</p>
+              <p>Problem Solving</p>
+              <p>Database Schema</p>
+              <p>Rest API</p>
+              <p>WebSocket</p>
+              <p>Git</p>
+            </div>
+          </section>
+          <div style="position: absolute; bottom: 5%; left: 58px">
+            <strong
+              ><a style="color: black" href="Salah_C.V.pdf" download="CV">
+                Download PDF Version
+              </a></strong
+            >
+          </div>
+        </div>
+        <div id="mainContent" onclick="deactiveSide(this)">
+          <section id="summary">
+            <h2>Summary & Objectives</h2>
+            <p style="font-size: 16px; margin-bottom: 10px">
+              I have extensive experience in web development, utilizing various
+              technologies such as Laravel, Livewire, MySQL, JavaScript, VueJS,
+              and JQuery. I prioritize conducting thorough code reviews before
+              committing changes, ensuring that the code is clean, readable, and
+              easily expandable. Moreover, I consistently apply object-oriented
+              programming principles, specifically the SOLID principles, and
+              select appropriate design patterns to solve problems efficiently.
+              <br />
+              I possess a strong interest in staying up-to-date with the latest
+              developments in the industry, consistently seeking out new
+              knowledge and advancements.
+            </p>
+          </section>
+          <hr />
+          <section id="projects">
+            <h2>Projects</h2>
+            <div id="projects_container">
+              <div class="project">
+                <p class="project_title">Tech-Store</p>
+                <div class="project_contents">
+                  <div class="project_contents_header">
+                    <h4 style="padding-left: 5px">Description</h4>
+                    <span class="online">Online</span>
+                  </div>
+                  <p style="padding-left: 10px">
+                    The website has four types of users: super admin, admin,
+                    user, and guests. Each user type has different permissions.
+                    The website is divided into three categories: mobiles &
+                    tablets, TVs, and laptops & PCs.
+                  </p>
+                  <p>
+                    <strong>Note:</strong> Users can become an admin for a
+                    limited period of 3 days by clicking on the "be an admin"
+                    button.
+                  </p>
+                  <h4>Main used technologies</h4>
+                  <ul>
+                    <li style="margin-left: 21px">
+                      Laravel / MySQL / Blade / Livewire / JQuery / More
+                    </li>
+                  </ul>
+                  <h4>Visit the website</h4>
+                  <ul>
+                    <li style="margin-left: 21px">
+                      <a
+                        style="word-break: break-all"
+                        href="http://salah-tech-store.great-site.net/"
+                        target="_blank"
+                        >http://salah-tech-store.great-site.net/</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <div class="project">
+                <p class="project_title">
+                  Real-time Chat, To-Do List, And Whack-a-Mole Game
+                </p>
+                <div class="project_contents">
+                  <div class="project_contents_header">
+                    <h4 style="padding-left: 5px">Description</h4>
+                  </div>
+                  <p style="padding-left: 10px">
+                    <strong>Authentication:</strong> Prior to accessing the
+                    website, it is necessary to either log in or register.
+                  </p>
+                  <p style="padding-left: 10px">
+                    <strong>Real-time Chat:</strong> The chat module consists of
+                    three columns: suggested users, friends, and a public chat
+                    room. Users have the ability to send friend requests, remove
+                    pending requests, and unfriend existing friends. Accepted
+                    requests enable private conversations.
+                  </p>
+                  <p style="padding-left: 10px">
+                    <strong>To-DO:</strong> Within the To-Do module, you can add
+                    tasks, edit them directly, mark them as complete, delete
+                    individual tasks, or delete all tasks at once.
+                  </p>
+                  <p style="padding-left: 10px">
+                    <strong>Whack-a-Mole Game:</strong> This widely recognized
+                    game has been developed with six holes and a high-speed
+                    timer to keep track of the top score.
+                  </p>
+                  <h4>Main used technologies</h4>
+                  <ul>
+                    <li style="margin-left: 21px">
+                      Laravel / Web-Socket / VueJS / Laravel Echo / More
+                    </li>
+                  </ul>
+                  <h4>Visit it on github</h4>
+                  <ul>
+                    <li style="margin-left: 21px">
+                      <a
+                        style="word-break: break-all"
+                        href="https://github.com/salaheldeen911/vue-vite-chat-app"
+                        target="_blank"
+                        >https://github.com/salaheldeen911/vue-vite-chat-app</a
+                      >
+                    </li>
+                    <li style="margin-left: 21px">
+                      <a
+                        style="word-break: break-all"
+                        href="https://github.com/salaheldeen911/chat-api"
+                        target="_blank"
+                        >https://github.com/salaheldeen911/chat-api</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <div class="project">
+                <p class="project_title">PHP MVC framework</p>
+                <div class="project_contents">
+                  <div class="project_contents_header">
+                    <h4 style="padding-left: 5px">Description</h4>
+                  </div>
+                  <p style="padding-left: 10px">
+                    In this framework, you can define your own routes similar to
+                    Laravel. You can also create your own controllers, models,
+                    and views.
+                  </p>
+                  <p style="padding-left: 10px">
+                    If you're interested, I highly recommend visiting the
+                    repository for the documentation.
+                  </p>
+                  <h4>Main used technologies</h4>
+                  <ul>
+                    <li style="margin-left: 21px">PHP / OOP</li>
+                  </ul>
+                  <h4>Visit it on github</h4>
+                  <ul>
+                    <li style="margin-left: 21px">
+                      <a
+                        style="word-break: break-all"
+                        href="https://github.com/salaheldeen911/simple_php_oop_mvc_framework"
+                        target="_blank"
+                        >https://github.com/salaheldeen911/simple_php_oop_mvc_framework</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <div class="project">
+                <p class="project_title">Spry Validator Plugin</p>
+                <div class="project_contents">
+                  <div class="project_contents_header">
+                    <h4 style="padding-left: 5px">Description</h4>
+                  </div>
+                  <p style="padding-left: 10px">
+                    This plugin is an added layer on Adobe Spry Validation open
+                    source. It includes custom error messages and additional
+                    functionality to facilitate AJAX requests, making it more
+                    user-friendly and versatile. <br />
+                    For more detailed information, refer to the documentation
+                    provided for this JQuery plugin.
+                  </p>
+                  <h4>Main used technologies</h4>
+                  <ul>
+                    <li style="margin-left: 21px">JavaScript / JQuery</li>
+                  </ul>
+                  <h4>Visit it on github</h4>
+                  <ul>
+                    <li style="margin-left: 21px">
+                      <a
+                        style="word-break: break-all"
+                        href="https://github.com/salaheldeen911/Spry-Validator-Plugin"
+                        target="_blank"
+                        >https://github.com/salaheldeen911/Spry-Validator-Plugin</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <div class="project">
+                <p class="project_title">More</p>
+                <div class="project_contents">
+                  <div class="project_contents_header">
+                    <h4 style="padding-left: 5px">Description</h4>
+                  </div>
+                  <p style="padding-left: 10px">
+                    There are more than 10 repositories available on my Github
+                    account, like
+                    <strong
+                      ><a
+                        href="https://salaheldeen911.github.io/css-jquery-template/"
+                        target="_blank"
+                        >Responsive Template</a
+                      ></strong
+                    >,
+                    <strong
+                      ><a
+                        href="https://salaheldeen911.github.io/preloader-idea/"
+                        target="_blank"
+                        >Preloader</a
+                      ></strong
+                    >,
+                    <strong
+                      ><a
+                        href="https://github.com/salaheldeen911/vue-todo-list"
+                        target="_blank"
+                        >VueJS to-do list</a
+                      ></strong
+                    >
+                    with a
+                    <strong
+                      ><a
+                        href="https://github.com/salaheldeen911/laravel-api-for-vue-todo-list"
+                        target="_blank"
+                      >
+                        Laravel Sanctum Api</a
+                      ></strong
+                    >,
+                    <strong
+                      ><a
+                        href="https://github.com/salaheldeen911/php-choices-exams"
+                        target="_blank"
+                        >PHP multiple choices exams system</a
+                      ></strong
+                    >, and more. <br />
+                    You can find them all on my Github account
+                    <a href="https://github.com/salaheldeen911" target="_blank"
+                      >https://github.com/salaheldeen911</a
+                    >.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <br />
+          <hr />
+          <section id="work">
+            <h2>Current Work</h2>
+            <p style="font-size: 16px">
+              I am currently employed as a back-end developer at
+              <strong>RayaGate IT Company</strong>. Here are the projects I have
+              contributed to:
+            </p>
+            <ul>
+              <li style="margin-left: 21px">
+                <strong>CMS System:</strong> I developed a content management
+                system for a university in Germany.
+              </li>
+              <li style="margin-left: 21px">
+                <strong>K-Link Project:</strong> I am currently working on a
+                multi-tenant system that is being built to support
+                transportation companies in the German market. This system will
+                be able to handle multiple databases.
+              </li>
+            </ul>
+          </section>
+          <br />
+          <hr />
+          <section id="education">
+            <h2>Education</h2>
+            <p style="font-size: 16px">
+              Bachelor's degree from Faculty of Commerce, Alexandria University,
+              Egypt.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

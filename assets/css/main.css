@@ -1,147 +1,165 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Amiri', serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Amiri", serif;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888;
+  background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    background: #319aba;
-    color: white;
-    gap: 15px;
-    padding: 20px;
-    height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  background: #319aba;
+  color: white;
+  gap: 15px;
+  padding: 20px;
+  height: 140px;
 }
 
 header h1 {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 header h3 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 main #mainContainer {
-    display: flex;
+  display: flex;
 }
 
 main #mainContainer #sidebar {
-    position: relative;
-    width: 300px;
-    background: #e0e0e0;
-    padding: 20px;
+  position: relative;
+  width: 300px;
+  background: #e0e0e0;
+  padding: 20px;
 }
 
 #right_arrow_holder,
 #left_arrow_holder {
-    position: absolute;
-    top: 10px;
-    cursor: pointer;
-    right: -40px;
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+  right: -40px;
 }
 
 main #mainContainer #sidebar #skillsContainer {
-    border-left: 2px solid #757575;
-    padding: 0 10px;
+  border-left: 2px solid #757575;
+  padding: 0 10px;
 }
 
 main #mainContainer #sidebar {
-    transition: all 1s;
+  transition: all 1s;
 }
 
 main #mainContainer #mainContent {
-    width: calc(100% - 300px);
-    padding: 30px;
+  width: calc(100% - 300px);
+  padding: 30px;
 }
 
 main #mainContainer #mainContent #projects_container .project {
-    display: flex;
+  display: flex;
 }
 
 main #mainContainer #mainContent #projects_container .project .project_title {
-    width: 300px;
-    font-size: 18px;
-    color: #3a3a3a;
+  width: 300px;
+  font-size: 18px;
+  color: #3a3a3a;
 }
 
-main #mainContainer #mainContent #projects_container .project .project_contents {
-    padding-left: 20px;
-    border-left: 1px solid rgb(196, 196, 196);
-    width: 100%;
+main
+  #mainContainer
+  #mainContent
+  #projects_container
+  .project
+  .project_contents {
+  padding-left: 20px;
+  border-left: 1px solid rgb(196, 196, 196);
+  width: 100%;
 }
 
-main #mainContainer #mainContent #projects_container .project .project_contents .project_contents_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #f0f0f0;
-    border-radius: 10px 25px 25px 10px;
+main
+  #mainContainer
+  #mainContent
+  #projects_container
+  .project
+  .project_contents
+  .project_contents_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 10px 25px 25px 10px;
 }
 
-main #mainContainer #mainContent #projects_container .project .project_contents .project_contents_header .online {
-    padding: 0 6px;
-    background: rgb(154, 231, 154);
-    border-radius: 35%;
+main
+  #mainContainer
+  #mainContent
+  #projects_container
+  .project
+  .project_contents
+  .project_contents_header
+  .online {
+  padding: 0 6px;
+  background: rgb(154, 231, 154);
+  border-radius: 35%;
 }
 
 .activeSide {
-    transform: translateX(0%) !important;
+  transform: translateX(0%) !important;
 }
 
 .hidden {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .none {
-    display: none;
+  display: none;
 }
 
 @media only screen and (max-width: 860px) {
-    main #mainContainer {
-        position: relative;
-        display: block;
-    }
+  main #mainContainer {
+    position: relative;
+    display: block;
+  }
 
-    main #mainContainer #sidebar {
-        position: absolute;
-        transform: translateX(-100%);
-        bottom: 0;
-        top: 0;
-    }
+  main #mainContainer #sidebar {
+    position: absolute;
+    transform: translateX(-100%);
+    bottom: 0;
+    top: 0;
+  }
 
-    main #mainContainer #mainContent {
-        width: 100%;
-    }
+  main #mainContainer #mainContent {
+    width: 100%;
+  }
 
-    main #mainContainer #mainContent #projects_container .project {
-        display: block;
-    }
+  main #mainContainer #mainContent #projects_container .project {
+    display: block;
+  }
 
-    .none {
-        display: block;
-    }
+  .none {
+    display: block;
+  }
 }
