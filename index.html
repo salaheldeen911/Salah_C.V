@@ -1,372 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salah CV</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amiri&family=Hurricane&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> -->
-    <link
-      href="assets/css/fontawesome-free-6.4.0-web/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/css/main.css" rel="stylesheet" />
-  </head>
-
-  <body>
-    <header>
-      <h1>Salah Eldeen Mohamed</h1>
-      <h3>PHP / Laravel Web Developer</h3>
-    </header>
-    <main>
-      <div id="mainContainer">
-        <div id="sidebar">
-          <div id="right_arrow_holder" class="none" onclick="activeSide(this)">
-            <i
-              class="fa fa-arrow-alt-circle-right"
-              style="font-size: 28px; color: #319aba"
-            ></i>
-          </div>
-          <div
-            id="left_arrow_holder"
-            class="hidden none"
-            onclick="deactiveSide(this)"
-          >
-            <i
-              class="fa fa-arrow-alt-circle-left"
-              style="font-size: 28px; color: #319aba"
-            ></i>
-          </div>
-          <section id="contact">
-            <h3>Contact</h3>
-            <p>
-              <strong><i class="fa fa-envelope"></i> </strong
-              >salah.eldeen.mail.gmail.com
-            </p>
-            <p>
-              <strong><i class="fa fa-phone-volume"></i> </strong>+201273542801
-            </p>
-            <p>
-              <strong><i class="fab fa-github-square"></i> </strong
-              >https://github.com/salaheldeen911
-            </p>
-            <p>
-              <strong><i class="fab fa-linkedin"></i> </strong
-              >https://www.linkedin.com/in/salah-mohamed-3a43581b5
-            </p>
-          </section>
-          <hr style="margin: 20px 0" />
-          <section id="skills">
-            <h3>Skills</h3>
-            <div id="skillsContainer">
-              <p>Laravel</p>
-              <p>PHP</p>
-              <p>Livewire</p>
-              <p>MySQL</p>
-              <p>JavaScript</p>
-              <p>VueJS</p>
-              <p>JQuery</p>
-              <p>CSS</p>
-              <p>HTML</p>
-            </div>
-          </section>
-          <hr style="margin: 20px 0" />
-          <section id="knowledge">
-            <h3>knowledge</h3>
-            <div id="knowledgeContainer">
-              <p>SOLID</p>
-              <p>Design Patterns</p>
-              <p>Problem Solving</p>
-              <p>Database Schema</p>
-              <p>Rest API</p>
-              <p>WebSocket</p>
-              <p>Git</p>
-            </div>
-          </section>
-          <div style="position: absolute; bottom: 5%; left: 58px">
-            <strong
-              ><a style="color: black" href="Salah_C.V.pdf" download="CV">
-                Download PDF Version
-              </a></strong
-            >
-          </div>
-        </div>
-        <div id="mainContent" onclick="deactiveSide(this)">
-          <section id="summary">
-            <h2>Summary & Objectives</h2>
-            <p style="font-size: 16px; margin-bottom: 10px">
-              I have extensive experience in web development, utilizing various
-              technologies such as Laravel, Livewire, MySQL, JavaScript, VueJS,
-              and JQuery. I prioritize conducting thorough code reviews before
-              committing changes, ensuring that the code is clean, readable, and
-              easily expandable. Moreover, I consistently apply object-oriented
-              programming principles, specifically the SOLID principles, and
-              select appropriate design patterns to solve problems efficiently.
-              <br />
-              I possess a strong interest in staying up-to-date with the latest
-              developments in the industry, consistently seeking out new
-              knowledge and advancements.
-            </p>
-          </section>
-          <hr />
-          <section id="projects">
-            <h2>Projects</h2>
-            <div id="projects_container">
-              <div class="project">
-                <p class="project_title">Tech-Store</p>
-                <div class="project_contents">
-                  <div class="project_contents_header">
-                    <h4 style="padding-left: 5px">Description</h4>
-                    <!-- <span class="online">Online</span> -->
-                  </div>
-                  <p style="padding-left: 10px">
-                    The website has four types of users: super admin, admin,
-                    user, and guests. Each user type has different permissions.
-                    The website is divided into three categories: mobiles &
-                    tablets, TVs, and laptops & PCs.
-                  </p>
-                  <p>
-                    <strong>Note:</strong> Users can become an admin for a
-                    limited period of 3 days by clicking on the "be an admin"
-                    button.
-                  </p>
-                  <h4>Main used technologies</h4>
-                  <ul>
-                    <li style="margin-left: 21px">
-                      Laravel / MySQL / Blade / Livewire / JQuery / More
-                    </li>
-                  </ul>
-                  <h4>Visit the website</h4>
-                  <ul>
-                    <li style="margin-left: 21px">
-                      <a
-                        style="word-break: break-all"
-                        href="http://salah-tech-store.great-site.net/"
-                        target="_blank"
-                        >http://salah-tech-store.great-site.net/</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <br />
-              <div class="project">
-                <p class="project_title">
-                  Real-time Chat, To-Do List, And Whack-a-Mole Game
-                </p>
-                <div class="project_contents">
-                  <div class="project_contents_header">
-                    <h4 style="padding-left: 5px">Description</h4>
-                  </div>
-                  <p style="padding-left: 10px">
-                    <strong>Authentication:</strong> Prior to accessing the
-                    website, it is necessary to either log in or register.
-                  </p>
-                  <p style="padding-left: 10px">
-                    <strong>Real-time Chat:</strong> The chat module consists of
-                    three columns: suggested users, friends, and a public chat
-                    room. Users have the ability to send friend requests, remove
-                    pending requests, and unfriend existing friends. Accepted
-                    requests enable private conversations.
-                  </p>
-                  <p style="padding-left: 10px">
-                    <strong>To-DO:</strong> Within the To-Do module, you can add
-                    tasks, edit them directly, mark them as complete, delete
-                    individual tasks, or delete all tasks at once.
-                  </p>
-                  <p style="padding-left: 10px">
-                    <strong>Whack-a-Mole Game:</strong> This widely recognized
-                    game has been developed with six holes and a high-speed
-                    timer to keep track of the top score.
-                  </p>
-                  <h4>Main used technologies</h4>
-                  <ul>
-                    <li style="margin-left: 21px">
-                      Laravel / Web-Socket / VueJS / Laravel Echo / More
-                    </li>
-                  </ul>
-                  <h4>Visit it on github</h4>
-                  <ul>
-                    <li style="margin-left: 21px">
-                      <a
-                        style="word-break: break-all"
-                        href="https://github.com/salaheldeen911/vue-vite-chat-app"
-                        target="_blank"
-                        >https://github.com/salaheldeen911/vue-vite-chat-app</a
-                      >
-                    </li>
-                    <li style="margin-left: 21px">
-                      <a
-                        style="word-break: break-all"
-                        href="https://github.com/salaheldeen911/chat-api"
-                        target="_blank"
-                        >https://github.com/salaheldeen911/chat-api</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <br />
-              <div class="project">
-                <p class="project_title">PHP MVC framework</p>
-                <div class="project_contents">
-                  <div class="project_contents_header">
-                    <h4 style="padding-left: 5px">Description</h4>
-                  </div>
-                  <p style="padding-left: 10px">
-                    In this framework, you can define your own routes similar to
-                    Laravel. You can also create your own controllers, models,
-                    and views.
-                  </p>
-                  <p style="padding-left: 10px">
-                    If you're interested, I highly recommend visiting the
-                    repository for the documentation.
-                  </p>
-                  <h4>Main used technologies</h4>
-                  <ul>
-                    <li style="margin-left: 21px">PHP / OOP</li>
-                  </ul>
-                  <h4>Visit it on github</h4>
-                  <ul>
-                    <li style="margin-left: 21px">
-                      <a
-                        style="word-break: break-all"
-                        href="https://github.com/salaheldeen911/simple_php_oop_mvc_framework"
-                        target="_blank"
-                        >https://github.com/salaheldeen911/simple_php_oop_mvc_framework</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <br />
-              <div class="project">
-                <p class="project_title">Spry Validator Plugin</p>
-                <div class="project_contents">
-                  <div class="project_contents_header">
-                    <h4 style="padding-left: 5px">Description</h4>
-                  </div>
-                  <p style="padding-left: 10px">
-                    This plugin is an added layer on Adobe Spry Validation open
-                    source. It includes custom error messages and additional
-                    functionality to facilitate AJAX requests, making it more
-                    user-friendly and versatile. <br />
-                    For more detailed information, refer to the documentation
-                    provided for this JQuery plugin.
-                  </p>
-                  <h4>Main used technologies</h4>
-                  <ul>
-                    <li style="margin-left: 21px">JavaScript / JQuery</li>
-                  </ul>
-                  <h4>Visit it on github</h4>
-                  <ul>
-                    <li style="margin-left: 21px">
-                      <a
-                        style="word-break: break-all"
-                        href="https://github.com/salaheldeen911/Spry-Validator-Plugin"
-                        target="_blank"
-                        >https://github.com/salaheldeen911/Spry-Validator-Plugin</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <br />
-              <div class="project">
-                <p class="project_title">More</p>
-                <div class="project_contents">
-                  <div class="project_contents_header">
-                    <h4 style="padding-left: 5px">Description</h4>
-                  </div>
-                  <p style="padding-left: 10px">
-                    There are more than 10 repositories available on my Github
-                    account, like
-                    <strong
-                      ><a
-                        href="https://salaheldeen911.github.io/css-jquery-template/"
-                        target="_blank"
-                        >Responsive Template</a
-                      ></strong
-                    >,
-                    <strong
-                      ><a
-                        href="https://salaheldeen911.github.io/preloader-idea/"
-                        target="_blank"
-                        >Preloader</a
-                      ></strong
-                    >,
-                    <strong
-                      ><a
-                        href="https://github.com/salaheldeen911/vue-todo-list"
-                        target="_blank"
-                        >VueJS to-do list</a
-                      ></strong
-                    >
-                    with a
-                    <strong
-                      ><a
-                        href="https://github.com/salaheldeen911/laravel-api-for-vue-todo-list"
-                        target="_blank"
-                      >
-                        Laravel Sanctum Api</a
-                      ></strong
-                    >,
-                    <strong
-                      ><a
-                        href="https://github.com/salaheldeen911/php-choices-exams"
-                        target="_blank"
-                        >PHP multiple choices exams system</a
-                      ></strong
-                    >, and more. <br />
-                    You can find them all on my Github account
-                    <a href="https://github.com/salaheldeen911" target="_blank"
-                      >https://github.com/salaheldeen911</a
-                    >.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <br />
-          <hr />
-          <section id="work">
-            <h2>Current Work</h2>
-            <p style="font-size: 16px">
-              I am currently employed as a back-end developer at
-              <strong>RayaGate IT Company</strong>. Here are the projects I have
-              contributed to:
-            </p>
-            <ul>
-              <li style="margin-left: 21px">
-                <strong>CMS System:</strong> I developed a content management
-                system for a university in Germany.
-              </li>
-              <li style="margin-left: 21px">
-                <strong>K-Link Project:</strong> I am currently working on a
-                multi-tenant system that is being built to support
-                transportation companies in the German market. This system will
-                be able to handle multiple databases.
-              </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salah Mohamed | Backend Software Engineer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Salah<span>.dev</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn-primary-outline">Contact</a></li>
             </ul>
-          </section>
-          <br />
-          <hr />
-          <section id="education">
-            <h2>Education</h2>
-            <p style="font-size: 16px">
-              Bachelor's degree from Faculty of Commerce, Alexandria University,
-              Egypt.
-            </p>
-          </section>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-      </div>
-    </main>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <p class="greeting">Hello, I'm</p>
+            <h1 class="name">Salah Mohamed</h1>
+            <h2 class="role">Backend Software Engineer | Laravel & PHP</h2>
+            <p class="hero-desc">Backend engineer with 3+ years building Laravel-based SaaS platforms, focusing on multi-tenant architecture, Stripe integrations, MySQL optimization, and real-time systems.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="Salah_Mohamed_CV.pdf" download="Salah_Mohamed_CV.pdf" class="btn-secondary"><i class="fas fa-download"></i> Download CV</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/salaheldeen911" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/salah-eldeen-mohamed" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:salah.eldeen.mail@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://wa.me/201273542801" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Professional Summary</h2>
+            <div class="about-content glass-panel">
+                <p>I am a dedicated Backend Software Engineer with over 3 years of experience specializing in building highly scalable, Laravel-based SaaS platforms.</p>
+                <p>My expertise lies in designing complex system architectures, including multi-tenant logistics platforms catering to European markets. I am highly proficient in <strong>MySQL optimization</strong>, implementing reliable <strong>Stripe billing integrations</strong>, and building cutting-edge real-time features using <strong>Laravel Reverb and Redis</strong>.</p>
+                <p>I am highly comfortable owning backend modules end-to-end—from initial database schema design all the way through to deployment and performance monitoring. I prioritize strict code quality, service-layer architecture, and mentoring junior developers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-secondary">
+        <div class="container">
+            <h2 class="section-title">Technical Capabilities</h2>
+            
+            <div class="skills-list">
+                
+                <div class="skill-row animate-on-scroll">
+                    <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="skill-details">
+                        <h3>Languages & Frameworks</h3>
+                        <p>PHP <span class="dot">•</span> Laravel <span class="dot">•</span> JavaScript <span class="dot">•</span> Vue.js <span class="dot">•</span> Livewire <span class="dot">•</span> Blade</p>
+                    </div>
+                </div>
+
+                <div class="skill-row animate-on-scroll">
+                    <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
+                    <div class="skill-details">
+                        <h3>Architecture & Design</h3>
+                        <p>Multi-tenant Systems <span class="dot">•</span> RESTful APIs <span class="dot">•</span> SOLID Principles <span class="dot">•</span> Service Layer <span class="dot">•</span> Event-driven Flows</p>
+                    </div>
+                </div>
+
+                <div class="skill-row animate-on-scroll">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <div class="skill-details">
+                        <h3>Databases</h3>
+                        <p>MySQL <span class="dot">•</span> Schema Design <span class="dot">•</span> Indexing & Optimization <span class="dot">•</span> Transactions <span class="dot">•</span> Concurrency Control</p>
+                    </div>
+                </div>
+
+                <div class="skill-row animate-on-scroll">
+                    <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                    <div class="skill-details">
+                        <h3>Caching, Queues & Real-time</h3>
+                        <p>Redis <span class="dot">•</span> Laravel Horizon <span class="dot">•</span> Background Jobs <span class="dot">•</span> Laravel Reverb <span class="dot">•</span> Laravel Echo <span class="dot">•</span> WebSockets</p>
+                    </div>
+                </div>
+
+                <div class="skill-row animate-on-scroll">
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <div class="skill-details">
+                        <h3>DevOps & Integrations</h3>
+                        <p>Stripe Billing <span class="dot">•</span> Git <span class="dot">•</span> Docker <span class="dot">•</span> GitHub Actions <span class="dot">•</span> Laravel Forge <span class="dot">•</span> Linux</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline-grid">
+                
+                <div class="timeline">
+                    <!-- Freelance -->
+                    <div class="timeline-item glass-panel">
+                        <div class="timeline-dot"></div>
+                        <h3 class="timeline-title">Freelance Backend Developer</h3>
+                        <h4 class="timeline-company">Self-employed | Alexandria, Egypt (Remote)</h4>
+                        <p class="timeline-date">01/2025 – Present</p>
+                        <ul class="timeline-list">
+                            <li><strong>Real Estate Platform (Syrian market):</strong> Designed the core schema and built property search APIs with filtering across 30+ attributes (location, price, type, amenities). Integrated WebSocket-based chat with Laravel Echo, including typing indicators and presence channels.</li>
+                            <li><strong>Wallet & Credits System:</strong> Built a points-based wallet allowing users to recharge balance and spend credits on listing properties and premium features; handled transaction integrity, balance validation, and audit logging.</li>
+                            <li><strong>Currency Exchange & Cashier System:</strong> Built a multi-currency, multi-branch cashier platform handling 1000+ daily transactions across 5 branches; used database transactions and row-level locking to prevent race conditions during concurrent cashier sessions.</li>
+                        </ul>
+                    </div>
+
+                    <!-- RayaGate -->
+                    <div class="timeline-item glass-panel">
+                        <div class="timeline-dot"></div>
+                        <h3 class="timeline-title">Backend Developer</h3>
+                        <h4 class="timeline-company">RayaGate IT Company | Alexandria, Egypt</h4>
+                        <p class="timeline-date">08/2022 – 12/2024</p>
+                        <ul class="timeline-list">
+                            <li><strong>Multi-tenant Logistics SaaS (Germany):</strong> Built database-per-tenant architecture serving 10 tenant companies. Implemented Stripe subscription flows with tenant-aware webhook handling, isolating billing cycles per tenant.</li>
+                            <li><strong>Tenant Provisioning:</strong> Moved the 5-second tenant onboarding flow (database creation, schema migration, seeded data, owner setup) onto a Redis-backed queue, allowing instant signup responses while provisioning runs in the background.</li>
+                            <li><strong>API Performance:</strong> Improved response times on high-traffic endpoints through Redis caching, eager loading, targeted indexes, and N+1 query elimination.</li>
+                            <li><strong>CMS for German University:</strong> Built a content management backend with role-based access control, multilingual support, and content approval workflows for 100 active editors.</li>
+                            <li><strong>Code Quality:</strong> Refactored fat controllers into a service-layer structure across legacy modules, isolating business logic from HTTP handling.</li>
+                            <li><strong>Mentorship & Code Review:</strong> Code-reviewed work from 3 junior developers; ran internal sessions on Laravel best practices, OOP, and security pitfalls.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-secondary">
+        <div class="container">
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card glass-panel">
+                    <div class="project-content">
+                        <h3>laravel-custom-fields (Open Source)</h3>
+                        <p class="project-desc">A powerful Laravel package utilizing polymorphic relationships to attach dynamic custom fields (text, number, date, email, multi-choice) to any Eloquent model without requiring new database migrations.</p>
+                        <div class="project-tech">
+                            <span>Laravel Package Development</span>
+                            <span>Polymorphic Relations</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/salaheldeen911/laravel-custom-fields" target="_blank" class="project-link"><i class="fab fa-github"></i> Repository</a>
+                            <a href="https://packagist.org/packages/salah/laravel-custom-fields" target="_blank" class="project-link"><i class="fas fa-box"></i> Packagist</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-panel">
+                    <div class="project-content">
+                        <h3>Real Estate Platform</h3>
+                        <p class="project-desc">Served as the Backend Lead on a team of 3. Designed the entire schema, built extensive filtering/search APIs, and integrated the custom-fields engine. Implemented real-time chat with Laravel WebSockets (Echo) and offloaded image processing/emails to Redis queues.</p>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>Redis</span>
+                            <span>WebSockets</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-panel">
+                    <div class="project-content">
+                        <h3>Currency Exchange & Cashier System</h3>
+                        <p class="project-desc">Developed a multi-currency, multi-branch cashier platform featuring concurrent session handling and live exchange-rate synchronization via Laravel Reverb. Utilized atomic transactions and row-level locking to guarantee consistent state across concurrent operations.</p>
+                        <div class="project-tech">
+                            <span>Laravel Reverb</span>
+                            <span>Row-level Locking</span>
+                            <span>Database Transactions</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Education Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="timeline-grid" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
+                
+                <div class="contact-card glass-panel" style="margin: 0; text-align: left;">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem; font-size: 2rem;">Education</h2>
+                    <h3 style="color: var(--accent-color); margin-bottom: 0.5rem;">Bachelor of Commerce</h3>
+                    <p style="color: var(--text-primary); margin-bottom: 0.5rem;">Alexandria University, Egypt</p>
+                    <hr style="border-color: var(--glass-border); margin: 1rem 0;">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem; margin-top: 1.5rem; font-size: 2rem;">Languages</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;"><strong>Arabic:</strong> Native</p>
+                    <p style="color: var(--text-secondary);"><strong>English:</strong> Professional Working Proficiency</p>
+                </div>
+
+                <div class="contact-card glass-panel" style="margin: 0;">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="contact-desc">I'm currently available for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    <div class="contact-info">
+                        <a href="mailto:salah.eldeen.mail@gmail.com" class="contact-item" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-envelope"></i>
+                            salah.eldeen.mail@gmail.com
+                        </a>
+                        <a href="tel:+201273542801" class="contact-item" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-phone-alt"></i>
+                            +201273542801
+                        </a>
+                        <a href="https://wa.me/201273542801" target="_blank" class="contact-item" style="width: 100%; justify-content: center;">
+                            <i class="fab fa-whatsapp"></i>
+                            +201273542801
+                        </a>
+                        <div style="display: flex; gap: 1rem; width: 100%; justify-content: center; margin-top: 1rem; font-size: 1.5rem;">
+                            <a href="https://github.com/salaheldeen911" target="_blank" style="color: var(--text-secondary);"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/salah-eldeen-mohamed" target="_blank" style="color: var(--text-secondary);"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/201273542801" target="_blank" style="color: var(--text-secondary);"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Salah Mohamed. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/salaheldeen911" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/salah-eldeen-mohamed" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/201273542801" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-  </body>
+</body>
 </html>
