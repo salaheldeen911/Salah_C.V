@@ -4,7 +4,7 @@ Welcome to my personal portfolio repository. I am a **Backend Software Engineer*
 
 ## 🌐 Live Portfolio
 Check out my live portfolio here:
-[https://salaheldeen911.github.io/new-cv/](https://salaheldeen911.github.io/new-cv/)
+[https://salaheldeen911.github.io/new-cv/](https://salaheldeen911.github.io/salah_cv/)
 
 ## 🚀 Technical Arsenal
 
