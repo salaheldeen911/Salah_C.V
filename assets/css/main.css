@@ -512,6 +512,12 @@ ul {
     gap: 4rem;
 }
 
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
 .timeline {
     position: relative;
     padding-left: 30px;
@@ -601,14 +607,18 @@ ul {
 .contact-item {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    word-break: break-word;
     gap: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: var(--text-primary);
-    padding: 10px 20px;
+    padding: 12px 20px;
     background: rgba(255, 255, 255, 0.03);
     border-radius: 8px;
     border: 1px solid var(--glass-border);
     transition: all var(--transition-fast);
+    width: 100%;
 }
 
 .contact-item i {
@@ -700,7 +710,7 @@ footer {
         flex-direction: column;
     }
     
-    .timeline-grid {
+    .timeline-grid, .contact-grid {
         grid-template-columns: 1fr;
     }
 
@@ -716,14 +726,7 @@ footer {
     }
 
     .dot {
-        display: none;
-    }
-
-    .skill-details p span:not(.dot)::after {
-        content: ', ';
-    }
-    
-    .skill-details p span:last-child::after {
-        content: '';
+        display: inline-block;
+        margin: 0 4px;
     }
 }
